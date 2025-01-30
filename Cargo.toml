@@ -1,0 +1,14 @@
+[package]
+name = "os_with_bootloader"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+ovmf-prebuilt = "0.1.0-alpha.1"
+
+[workspace]
+members = ["kernel_with_bootloader"]
+
+[build-dependencies]
+bootloader = "0.11"
+kernel_with_bootloader = {path = "kernel_with_bootloader", artifact = "bin", target = "x86_64-unknown-none"}

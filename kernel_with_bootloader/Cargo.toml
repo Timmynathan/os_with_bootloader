@@ -1,0 +1,9 @@
+[package]
+name = "kernel_with_bootloader"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+noto-sans-mono-bitmap = "0.2"
+bootloader_api = "0.11"
+x86_64 = "0.14"
